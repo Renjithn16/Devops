@@ -13,16 +13,7 @@ environment {
         bat "\"${MSBUILD}\" DevOps.sln /p:Configuration=${env.CONFIG};Platform=${env.PLATFORM} /maxcpucount:%NUMBER_OF_PROCESSORS% /nodeReuse:false"
       }
     }
-        stage('Test') { 
-            steps {
-                // 
-            }
-        }
-        stage('Deploy') { 
-            steps {
-                // 
-            }
-        }
-    }
+      
+    
 }
  
