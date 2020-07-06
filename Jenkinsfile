@@ -11,7 +11,7 @@ environment {
       steps {
  
         bat """
-        dir "${MSBUILD}\\MsBuild.exe" DevOps.sln /p:Configuration=${env.CONFIG}
+        dir "${MSBUILD}MsBuild.exe" DevOps.sln /p:Configuration=${env.CONFIG}
         """
       }
     }
