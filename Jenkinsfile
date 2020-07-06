@@ -9,7 +9,7 @@ environment {
     
     stage('Build') {
       steps {
-        bat "NuGet.exe restore DevOps.sln"
+ 
         bat "\"${MSBUILD}\" DevOps.sln /p:Configuration=${env.CONFIG};Platform=${env.PLATFORM} /maxcpucount:%NUMBER_OF_PROCESSORS% /nodeReuse:false"
       }
     }
