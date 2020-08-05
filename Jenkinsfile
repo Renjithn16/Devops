@@ -1,9 +1,15 @@
 pipeline {
 environment {
-    MSBUILD = "C:/Program Files (x86)/Microsoft Visual Studio/2017/BuildTools/MSBuild/15.0/Bin/"
+    MSBUILD = "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/"
     CONFIG = 'Release'
   }
-    agent any 
+    agent 
+    {
+        node
+        {
+         lable:'NH00'   
+        }
+    }
     stages {
     
     stage('Build') {
