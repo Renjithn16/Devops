@@ -24,7 +24,7 @@ environment {
     }
    post {
         always {
-            emailext body: 'A Test EMail', recipientProviders: [[$class: 'DevelopersRecipientProvider'], [$class: 'RequesterRecipientProvider']], subject: 'Test',to:'renjith.a.nair@outlook.com,renjithn16@gmail.com'
+            emailext body: 'A Test EMail', recipientProviders: [[$class: 'DevelopersRecipientProvider'], [$class: 'RequesterRecipientProvider']], subject: 'Test',to:'renjithn16@gmail.com'
         }
     }
 }
