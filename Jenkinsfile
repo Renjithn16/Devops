@@ -7,7 +7,7 @@ environment {
     {
         node
         {
-         lable:'NH00'   
+         label 'NH00'   
         }
     }
     stages {
